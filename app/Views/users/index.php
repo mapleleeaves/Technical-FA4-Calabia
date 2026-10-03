@@ -6,6 +6,10 @@
 <body>
 
     <h1>User Accounts</h1>
+    <p>
+    Logged in as: <?= esc(session('username')) ?> |
+    <a href="<?= site_url('logout') ?>">Logout</a>
+    </p>
 
     <?php if (session('message')): ?>
         <p><?= session('message') ?></p>
